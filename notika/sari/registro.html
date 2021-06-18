@@ -39,6 +39,9 @@
     <!-- Notika icon CSS
 		============================================ -->
     <link rel="stylesheet" href="../css/notika-custom-icon.css">
+    <!-- bootstrap select CSS
+		============================================ -->
+    <link rel="stylesheet" href="../css/bootstrap-select/bootstrap-select.css">
     <!-- main CSS
 		============================================ -->
     <link rel="stylesheet" href="../css/main.css">
@@ -68,13 +71,7 @@
                 <div class="input-group mg-t-15">
                     <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-support"></i></span>
                     <div class="nk-int-st">
-                        <input type="text" class="form-control" placeholder="Nombre" v-model="nombre">
-                    </div>
-                </div>
-                <div class="input-group mg-t-15">
-                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-edit"></i></span>
-                    <div class="nk-int-st">
-                        <input type="text" class="form-control" placeholder="Apellido" v-model="apellido">
+                        <input type="text" class="form-control" placeholder="Nombre completo" v-model="nombre">
                     </div>
                 </div>
                 <div class="input-group mg-t-15">
@@ -90,13 +87,21 @@
                     </div>
                 </div>
                 <div class="input-group mg-t-15">
+                  <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-edit"></i></span>
+                  <div class="nk-int-st">
+                      <div class="bootstrap-select fm-cmp-mg">
+                          <select class="selectpicker" v-model="rol">
+                                  <option disabled value="">Seleccione un elemento</option>
+                                  <option>Tutor</option>
+                                  <option>Estudiante</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="input-group mg-t-15">
                     <span class="input-group-addon">¿Ya tienes una cuenta? <a href="login.html">¡Inicia sesión!</a> </span>
                 </div>
             </div>
-
-
-
-
             <div class="nk-navigation nk-lg-ic">
                 <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-register" v-on:click="registro()"><i class="notika-icon notika-right-arrow right-arrow-ant"></i> <span>Registrar</span></a>
             </div>
@@ -170,6 +175,9 @@
     <!-- main JS
 		============================================ -->
     <script src="../js/main.js"></script>
+    <!-- bootstrap select JS
+		============================================ -->
+    <script src="../js/bootstrap-select/bootstrap-select.js"></script>
 
     <!-- Vue.js
     ============================================ -->
@@ -186,7 +194,7 @@
         data () {
           return {
             nombre: null,
-            apellido: null,
+            rol: null,
             email: null,
             password: null
           }
@@ -194,10 +202,10 @@
         methods: {
           registro: function () {
             axios.post(
-              'https://zupport.herokuapp.com/registro/',
+              'https://sari-ayd.herokuapp.com/signup/',
               {
                 nombre:this.nombre,
-                apellido:this.apellido,
+                apellido:this.rol,
                 email: this.email,
                 password: this.password
               }

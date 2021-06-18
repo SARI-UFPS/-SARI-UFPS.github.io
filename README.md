@@ -5,7 +5,7 @@ Con SARI podrá llevar un registro de los riesgos en sus proyectos de desarrollo
 
 ### Inicio de sesión
 
-![Login preview](https://i.imgur.com/7g2WrVP.png)
+![Login preview](https://imgur.com/hwxOhIs.png)
 
 ### Ingrese a la aplicación: [aquí](https://sari-ufps.github.io/notika/sari/login.html)
 
