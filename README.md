@@ -1,27 +1,20 @@
-# Notika
-Free Bootstrap admin dashboard
+# SARI
+Sistema de administración de riesgos informáticos
 
-# Preview
+Con SARI podrá llevar un registro de los riesgos en sus proyectos de desarrollo de software.
 
-### Screenshot
+### Inicio de sesión
 
-![Notika admin dashboard template preview](https://colorlib.com/wp/wp-content/uploads/sites/2/notika-free-creative-admin-dashboard.jpg)
+![Login preview](https://i.imgur.com/7g2WrVP.png)
 
-### Demo Site: [Here](https://colorlib.com/polygon/notika/index.html)
+### Ingrese a la aplicación: [aquí](https://sari-ufps.github.io/notika/sari/login.html)
 
 ### Changelog
 #### V 1.0.0
-Initial Release
-### Authors
-[Colorlib](https://colorlib.com)
+Lanzamiento inicial
 
-### More info
-- [Bootstrap Dashboards](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
-- [Angular dashboards](https://colorlib.com/wp/angularjs-admin-templates/)
-- [Admin Templates](https://colorlib.com/wp/free-html5-admin-dashboard-templates/)
-- [HTML Templates](https://colorlib.com/wp/templates/)
-- [Free WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/)
+#### Autor de la plantilla
+Colorlib
+#### License
 
-### License
-
-Notika is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Colorlib is the original author of this template.
+Este cliente utiliza la plantilla Notika que está licenciada bajo la licencia MIT (MIT).Lo que significa que puede usar, copiar, modificar, unir, publicar, distribuir, sublicenciar y/o vender copias del producto final.
